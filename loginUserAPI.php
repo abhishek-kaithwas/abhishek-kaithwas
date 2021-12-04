@@ -26,7 +26,7 @@ if(($p_userMobile != "") && ($p_userPass != "")){
 		// $response->r_userId = $p_userMobile;
 		$response->r_msg = $msg;
 		$response->r_login_session_id = $login_session_id;
-	}else{
+	}else{ 
 		$msg = 'failed';
 
 		// $response->r_userId = "";
@@ -34,6 +34,8 @@ if(($p_userMobile != "") && ($p_userPass != "")){
 		$response->r_login_session_id = "";
 	}
 
+
+	
 	// set header as json for response
 	header("Content-type: application/json");
 
